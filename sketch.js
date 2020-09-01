@@ -72,7 +72,7 @@ function draw() {
   //trex.debug = true;
   background(255);
   text("T-rex Score: "+ score, 500,50);
-  
+  text("HI: "+localStorage["HighestScore"],450,50);
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
